@@ -104,13 +104,12 @@ menubox(
   #-------------------------+------------------------------+-------------#
   
     "<~install>",    "",    "@send",    #-- selected = 1
-	"<~perfhal.restore>",    "",    "@archive",    #-- selected = 2
-    "<~kernel.about>",    "",    "@info",    #-- selected = 3
-	"<~kernel.aboutoc>",    "",    "@alert",    #-- selected = 4
-	"<~kernel.variantinfo>",    "",    "@info"    #-- selected = 5
+    "<~kernel.about>",    "",    "@info",    #-- selected = 2
+	"<~kernel.aboutoc>",    "",    "@alert",    #-- selected = 3
+	"<~kernel.variantinfo>",    "",    "@info"    #-- selected = 4
 );																															
 
-if prop("menu.prop","selected")=="3" then
+if prop("menu.prop","selected")=="2" then
 ini_set("text_next", "");
 textbox(
   #-- Title
@@ -125,7 +124,7 @@ textbox(
 back("1");
 endif;
 
-if prop("menu.prop","selected")=="4" then
+if prop("menu.prop","selected")=="3" then
 ini_set("text_next", "");
 textbox(
   #-- Title
@@ -140,7 +139,7 @@ textbox(
 back("1");
 endif;
 
-if prop("menu.prop","selected")=="5" then
+if prop("menu.prop","selected")=="4" then
 
 menubox(
   #-- Title
@@ -189,44 +188,6 @@ textbox(
 	);
 endif;
 back("1");
-endif;
-
-if prop("menu.prop","selected")=="2" then
-ini_set("text_next", "<~text_restore>");
-writetmpfile(
-      #-- Property
-	    "spectrum.prop",
-	  #-- Values
-	    "selected.2=4\n"
-    );
-	
-viewbox(
-	"<~perfhal> <~ready.restore>",
-	"\n\n\n\n\n\n\n\n\n\n<#textfg><~perfhal.restoreinfo>.\n\n"+
-	"<~common.press> <b><~text_restore></b> <~begin.restore>.\n\n"+
-	"<~common.toupper> <~common.cancel>, <~common.press> <b><~text_back>.</#>",
-	
-	"@verified"
-);
-
-ini_set("text_next", "<~text_finish>");
-
-setvar("retstatus",
-  install(
-	#-- Title
-      "<~restoring> <~perfhal>...",
-	
-	#-- Installation Process message
-	  "<~perfhal> <~isbeing.restored>\n\n"+
-      "<~please.wait>",
-	
-	#-- Installation Icon
-      "@build",
-	
-	#-- Installation Finish Message
-      "<~perfhal> <~resfinish>"
-  )
-);
 endif;
 
 if prop("menu.prop","selected")=="1" then
