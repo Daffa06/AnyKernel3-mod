@@ -5,7 +5,6 @@
 # begin properties
 properties() { '
 kernel.string=ExampleKernel by osm0sis @ xda-developers
-kernel.for=KernelForDriver
 kernel.compiler=SDPG
 kernel.made=Ryuuji @ItsRyuujiX
 kernel.version=44xxx

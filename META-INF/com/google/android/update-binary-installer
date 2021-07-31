@@ -643,7 +643,6 @@ if [ -f banner ]; then
 fi;
 
 KERNEL_STRING="$(file_getprop anykernel.sh kernel.string)";
-KERNEL_FOR="$(file_getprop anykernel.sh kernel.for)";
 KERNEL_COMPILER="$(file_getprop anykernel.sh kernel.compiler)";
 KERNEL_MADE="$(file_getprop anykernel.sh kernel.made)";
 KERNEL_VERSION="$(file_getprop anykernel.sh kernel.version)";
@@ -655,7 +654,7 @@ BUILD_TYPE="$(file_getprop anykernel.sh build.type)";
 if [ "$REG" = "IDN" ];then
 ui_print "-- Nama Kernel    : $KERNEL_STRING";
 ui_print "-- Versi Kernel   : $KERNEL_VERSION";
-ui_print "-- Varian         : $KERNEL_FOR - $KERNEL_TYPE";
+ui_print "-- Varian         : $KERNEL_TYPE";
 ui_print "-- PengKompilasi  : $KERNEL_COMPILER";
 ui_print "-- Perangkat      : $DEVICE_NAME";
 ui_print "-- Tanggal Build  : $BUILD_DATE";
@@ -664,7 +663,7 @@ ui_print "-- DiBuild Oleh   : $KERNEL_MADE";
 elif [ "$REG" = "JAV" ];then
 ui_print "-- Jeneng Kernel  : $KERNEL_STRING";
 ui_print "-- Versi Kernel   : $KERNEL_VERSION";
-ui_print "-- Varian         : $KERNEL_FOR - $KERNEL_TYPE";
+ui_print "-- Varian         : $KERNEL_TYPE";
 ui_print "-- Panyusun       : $KERNEL_COMPILER";
 ui_print "-- Piranti        : $DEVICE_NAME";
 ui_print "-- Tanggal Mbangun: $BUILD_DATE";
@@ -673,7 +672,7 @@ ui_print "-- Dibangun Dening: $KERNEL_MADE";
 elif [ "$REG" = "SUN" ];then
 ui_print "-- Ngaran Kernel    : $KERNEL_STRING";
 ui_print "-- Versi Kernel     : $KERNEL_VERSION";
-ui_print "-- Varian           : $KERNEL_FOR - $KERNEL_TYPE";
+ui_print "-- Varian           : $KERNEL_TYPE";
 ui_print "-- Panyusun         : $KERNEL_COMPILER";
 ui_print "-- Paranti          : $DEVICE_NAME";
 ui_print "-- Tanggal Ngawangun: $BUILD_DATE";
@@ -682,7 +681,7 @@ ui_print "-- Diwangun Ku      : $KERNEL_MADE";
 elif [ "$REG" = "HI" ];then
 ui_print "-- Kernel Ka Naam   : $KERNEL_STRING";
 ui_print "-- Kernel Ka Version: $KERNEL_VERSION";
-ui_print "-- Kernel Ka Variant: $KERNEL_FOR - $KERNEL_TYPE";
+ui_print "-- Kernel Ka Variant: $KERNEL_TYPE";
 ui_print "-- Clang Ka Naam    : $KERNEL_COMPILER";
 ui_print "-- Device Ka Naam   : $DEVICE_NAME";
 ui_print "-- Nirman Ka Taarekh: $BUILD_DATE";
@@ -691,7 +690,7 @@ ui_print "-- Nirmankarta      : $KERNEL_MADE";
 elif [ "$REG" = "EN" ];then
 ui_print "-- Kernel Name    : $KERNEL_STRING";
 ui_print "-- Kernel Version : $KERNEL_VERSION";
-ui_print "-- Variant        : $KERNEL_FOR - $KERNEL_TYPE";
+ui_print "-- Variant        : $KERNEL_TYPE";
 ui_print "-- Compiler       : $KERNEL_COMPILER";
 ui_print "-- Device         : $DEVICE_NAME";
 ui_print "-- Build Date     : $BUILD_DATE";
