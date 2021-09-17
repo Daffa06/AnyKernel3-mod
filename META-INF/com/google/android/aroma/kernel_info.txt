@@ -1,11 +1,11 @@
 <@center><b><#selectbg_g>ENGLISH</#></b>
 
-<@center><b><#selectbg_g>SkyWalker Kernel</#></b>
+<@center><b><#selectbg_g>KnightWalker Kernel</#></b>
 
 <b><#selectbg_g>Some Messages from me :</#></b></@>
 
 <@fill><q>
-SkyWalker Kernel is made with love by @ItsRyuujiX 
+KnightWalker Kernel is made with love by @ItsRyuujiX 
 which he's trying to give good experience for 
 any users :) .
  
@@ -23,12 +23,12 @@ Thank You for choosing this Kernel !. </q></@>
 
 <@center><b><#selectbg_g>INDONESIA</#></b>
 
-<@center><b><#selectbg_g>Kernel SkyWalker</#></b>
+<@center><b><#selectbg_g>Kernel KnightWalker</#></b>
 
 <b><#selectbg_g>Sedikit Pesan dari gw :</#></b></@>
 
 <@fill><q>
-Kernel SkyWalker dibuat dengan cinta dari
+Kernel KnightWalker dibuat dengan cinta dari
 @ItsRyuujiX (ANJAY AWOKAWOKAWOK) , yang
 dimana dia mencoba untuk memberikan
 pengalaman terbaik bagi pengguna :) .

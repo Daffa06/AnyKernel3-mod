@@ -106,8 +106,7 @@ menubox(
     "<~install>",    "",    "@send",    #-- selected = 1
     "<~forcedttw>", "", "@pen", #-- selected = 2
     "<~kernel.about>",    "",    "@info",    #-- selected = 3
-	"<~kernel.aboutoc>",    "",    "@alert",    #-- selected = 4
-	"<~kernel.variantinfo>",    "",    "@info"    #-- selected = 5
+	"<~kernel.aboutoc>",    "",    "@alert"    #-- selected = 4
 );																															
 
 writetmpfile(
@@ -144,57 +143,6 @@ textbox(
   #-- Text Content 
     resread("kernel_OC.txt")
 );
-back("1");
-endif;
-
-if prop("menu.prop","selected")=="5" then
-
-menubox(
-  #-- Title
-    "<~kernel.variantinfo>",
-  
-  #-- Description
-    "<~select.language>",
-  
-  #-- Icon
-    "@language",
-    
-  #-- Property
-    "varlang.prop",
-    
-  #-------------------------+------------------------------+-------------#
-  # TITLE                   | DESCRIPTION                  | ICON        #
-  #-------------------------+------------------------------+-------------#
-  
-    "ENGLISH",    "",    "@public",    #-- selected = 1
-    "INDONESIA",    "",    "@public"    #-- selected = 2
-);
-
-if prop("varlang.prop","selected")=="1" then
-ini_set("text_next", "");
-textbox(
-  #-- Title
-    "<~kernel.variantinfo>",
-  #-- Subtitle / Description
-    "<~infovariant.caution>",
-  #-- Icon:
-    "@info",
-  #-- Text Content 
-    resread("kernel_variant.txt")
-	);
-else
-ini_set("text_next", "");
-textbox(
-  #-- Title
-    "<~kernel.variantinfo>",
-  #-- Subtitle / Description
-    "<~infovariant.caution>",
-  #-- Icon:
-    "@info",
-  #-- Text Content 
-    resread("kernel_variant_id.txt")
-	);
-endif;
 back("1");
 endif;
 
