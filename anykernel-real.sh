@@ -13,7 +13,6 @@ message.word=blablabla
 build.date=2077
 build.type=stable
 do.devicecheck=1
-do.versioncheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
@@ -23,7 +22,7 @@ device.name2=X01BDA
 device.name3=Zenfone Max Pro M2 (X01BD)
 device.name4=ASUS_X01BD
 device.name5=ASUS_X01BDA
-supported.versions=11
+supported.versions=
 supported.patchlevels=
 '; } # end properties
 
