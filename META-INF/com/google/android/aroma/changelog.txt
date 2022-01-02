@@ -1,0 +1,673 @@
+a4aa093 AROMA: Added new menu & cleanup
+441ec4f wt88047_defconfig: regenerate
+d0be253 Revert "msm: memutils: memcpy, memmove, copy_page optimization"
+4f652bc Merge branch 'base' into excalibur
+46fca46 binfmt_elf: remove function get_atrandom_bytes
+cd2450c net: packet: fix unused-function warning
+a6604f4 random: initialize the non-blocking pool via add_hwgenerator_randomness()
+71776c2 random: Remove kernel blocking API
+effac4d random: Add callback API for random pool readiness
+2591d8c random: Blocking API for accessing nonblocking_pool
+574de5c random32: add prandom_u32_max and convert open coded users
+28cfcb5 random: sprinkle e/f/prandom in places that deplete entropy often
+f2189c2 random.h: declare erandom function
+ea25343 binfmt_elf: use prandom - do not deplete entropy
+d5a7541 random32: use e/frandom for reseeding, and a merge fixup
+5d73144 random: remove warning
+7e21ac6 random: prevent add_input from doing anything
+1674efb random: entropy tweaks are all the rage nowadays
+3fecf71 random: Add get_random_long function
+1bd9c85 random: Add random_get_entropy()
+046a6cd random: Backport from 4.1.39
+4fee10e sched/core: Allow putting thread_info into task_struct
+99470e9 Optimize ARM memset and memzero functions
+df8e456 Rename ARM assembler push/pull macros
+054aae6 Optimize copy_page for modern ARM platforms
+fd4c524 cpufreq: interactive: change sysfs permissions to r/W also for groups
+d383217 cpufreq: cpu-boost: Disable sched boost
+8358144 msm: kgsl: Fix race condition in adreno_spin_idle()
+8377198 cpufreq: preserve user_policy across suspend/resume
+63dc0bf cpufreq: Clean up after a failing light-weight initialization
+1ce54e2 cpufreq: use memcpy() to copy policy
+2f9735d power:qpnp-charger: extended charge time from 30s to 100s when battery status is near to full
+f452ba5 mmc: core: Use mmc_flush_cache() during mmc suspend
+4c80961 mmc: clk_scaling: set scale_down_in_low_wr_load to true
+d2c3008 mmc: clk_scaling: add sysfs for avoiding scale down in write
+b8d1fa9 binfmt_elf.c: use get_random_int() to fix entropy depleting
+331c2dd spi: spi_qsd: Modify the FIFO mode read/writes
+409e66e vfs: conditionally clear close-on-exec flag
+85cecce Input: optimize events_per_packet count calculation
+cb1ac1c zpx.sh: update
+b87e34b Revert "drivers/staging: wlan: Update key sequence counter to TL"
+f1f1edb mac80211: use constant time comparison with keys
+876e5e549 crypto: memneq - fix for archs without efficient unaligned access
+59e9515 crypto: more robust crypto_memneq
+3aaa7ff mac80211: accept key reinstall without changing anything
+b85286a Merge remote-tracking branch 'prima/LA.BR.1.2.9_rb1.29' into base
+e256cb0 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into base
+6139782 Revert "lib/string: use glibc version"
+4addba4 Revert "lib/memcopy: use glibc version"
+2b2d2f0 zram: increase zram devices
+9b3a8c9 fs: reducing vfs cache pressure
+5732a4b sched/fair: Fix fairness issue on migration
+8497f19 sched: enable HMP-aware task placement
+f970d62 Default to NOATIME and NODIRATIME for FS performance improvement.
+ddd3dde msm: mdss: hdmi: check up-bound of CEC frame size
+16bec1e ANDROID: input: keychord: fix race condition bug
+4aed3ae Revert "ANDROID: keychord: Fix races in keychord_write."
+fcd4d8e ALSA: pcm: prevent UAF in snd_pcm_info
+cc549ef dts: wt88047: enable focaltech,resume-in-workqueued * hopefully this fix bsod on some variant wt88047
+edda7b5 Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.041 on remote branch
+bc37215 Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.041 on remote branch
+67d0faa Promotion of wlan-driver.lnx.1.0.c4-00061.
+b7f4a4a Promotion of wlan-driver.lnx.1.0.c4-00059.
+529a4a7 Merge "net: usb: rmnet_usb_ctrl: Fix use after free issue"
+76392b7 Merge "ASoC : msm: qdsp6v2: set pointer to NULL after free."
+df7432f Merge "ALSA: pcm: remove unused variable from snd_pcm_info()"
+b3101d9 ALSA: pcm: remove unused variable from snd_pcm_info()
+0a9b80a ALSA: pcm: remove SNDRV_PCM_IOCTL1_INFO internal command
+66f50fb wlan: bap: Replace instances of unadorned %p
+bffbe25 wlan: dxe: Replace instances of unadorned %p
+9f980f7 wlan: hdd: Replace instances of unadorned %p
+5d74e74 wlan: mac: Replace instances of unadorned %p
+dc6c985 wlan: sap: Replace instances of unadorned %p
+f0b1f8f wlan: sme: Replace instances of unadorned %p
+fc1d680 wlan: svc: Replace instances of unadorned %p
+b463b5c wlan: tl: Replace instances of unadorned %p
+f340143 wlan: voss: Replace instances of unadorned %p
+44e098e wlan: wda: Replace instances of unadorned %p
+e95eedb wlan: wdi: Replace instances of unadorned %p
+f70b43d ASoC : msm: qdsp6v2: set pointer to NULL after free.
+34cea07 ASoC: msm: qdsp6v2: Add Support for compress record
+c74be9f wlan: Avoid possible stack overflow in hdd_ProcessGENIE API
+be41235 update
+7ae6a34 wt88047_defconfig: enable DYNAMIC_DEBUG
+2b65315 Merge "wlan: Propagate key sequence counter to SME"
+480efa9 Merge "wlan: Check ie_len against 255 in function get_container_ies_len"
+c0b72b9 wt88047_defconfig: disable CPU_IDLE_GOV_LADDER
+b1e2f8c fix disable touchboost
+bdf6a7f wt88047_defconfig: regenerate
+ea260bc msm: kgsl: Prevent deadlock in cmdbatch timer
+9d149ba nohz: Avoid tick's double reprogramming in highres mode
+3c0ecb6 nohz: Fix spurious periodic tick behaviour in low-res dynticks mode
+01e87a8 nohz: Get timekeeping max deferment outside jiffies_lock
+a0a3dcc zram: set QUEUE_FLAG_FAST in queue struct instead of zram struct
+3b109bb mm: zswap: change default compressor and zpool type
+41c92cf module: export param_free_charp()
+5924ca5 zpool: add zpool_has_pool()
+c6468b9 mm/zswap: use workqueue to destroy pool
+f62e708 mm/zswap: provide unique zpool name
+7c113df mm/zswap: change incorrect strncmp use to strcmp
+38ccf70 zswap: use charp for zswap param strings
+497d665 zswap: change zpool/compressor at runtime
+3b8078a zswap: dynamic pool creation
+2ba698c zswap: runtime enable/disable
+a756979 mm/zpool: add name argument to create zpool
+5b3607d mm/zswap: delete unnecessary check before calling free_percpu()
+96d70b8 mm/zswap: add __init to some functions in zswap
+eb75688 mm/zswap.c: add __init to zswap_entry_cache_destroy()
+470d23e mm/zpool: update zswap to use zpool
+54c6a94 zpool: change pr_info to pr_debug
+f7389b3 mm/zswap: NUMA aware allocation for zswap_dstmem
+222bf95 mm/zswap.c: remove unnecessary parentheses
+a669432 mm/zswap: support multiple swap devices
+f94b4b6 mm/zswap: bugfix: memory leak when re-swapon
+91112b6 mm/zswap.c: update zsmalloc in comment to zbud
+936cc14 mm/zswap.c: fix trivial typo and arrange indentation
+bc1f818 mm/zswap.c: change params from hidden to ro
+c1a1794 mm/zswap: refactor the get/put routines
+b10b129 mm/zswap: bugfix: memory leak when invalidate and reclaim occur concurrently
+6702d67 mm/zswap: avoid unnecessary page scanning
+2c2984b mm/zswap: use postorder iteration when destroying rbtree
+f72c083 mm/zswap.c: get swapper address_space by using macro
+cb060df drivers: net: Disable watchdog
+b10a121 net: rmnet_data: Disable watchdog for rmnet
+d077a1a net: sch_generic: Allow devices to opt-out net watchdog
+574db8f ipv4/fib: don't warn when primary address is missing if in_dev is dead
+9427209 mm/mmap.c: do not blow on PROT_NONE MAP_FIXED holes in the stack
+d34800a driver core: bus: Fix a potential double free
+37269aa epoll: fix race between ep_poll_callback(POLLFREE) and ep_free()/ep_remove()
+446e700 block: Relax a check in blk_start_queue()
+2f49fca elevator: use list_{first,prev,next}_entry
+2d6c16b block: Reserve only one queue tag for sync IO if only 3 tags are available
+5814485 block: Set CFQ Slice Idle Default to 0
+3a7599b msm: qdsp6v2: Allow 320K AAC encoding
+11e8050 UPSTREAM: net: xfrm: allow clearing socket xfrm policies.
+9b11d0a BACKPORT: xfrm: Don't use sk_family for socket policy lookups
+e39b08f UPSTREAM: ALSA: usb-audio: Kill stray URB at exiting
+d47eb6f BACKPORT: packet: in packet_do_bind, test fanout with bind_lock held
+b4a595d UPSTREAM: packet: hold bind lock when rebinding to fanout hook
+e540454 UPSTREAM: ALSA: usb-audio: Check out-of-bounds access by corrupted buffer descriptor
+404c7e4 UPSTREAM: USB: core: fix out-of-bounds access bug in usb_get_bos_descriptor()
+def6d29 UPSTREAM: HID: usbhid: fix out-of-bounds bug
+ce54df3 UPSTREAM: USB: fix out-of-bounds in usb_set_configuration
+044fc07 BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+49437c0 BACKPORT: net: xfrm: support setting an output mark.
+1e5c43d seccomp: always propagate NO_NEW_PRIVS on tsync
+bb6563b seccomp,x86,arm,mips,s390: Remove nr parameter from secure_computing
+159b8b5 CHROMIUM: oom: do not select new victim if current one is runnable
+805ba79 CHROMIUM: DROP: mm/oom_kill: Avoid deadlock; allow multiple victims
+66e14f4 CHROMIUM: DROP: mm/oom_kill: Double-check before killing a child in our place
+97ea7a2 BACKPORT: mm: oom_kill: don't ignore oom score on exiting tasks
+2488775 CHROMIUM: mm: lower oom dump burst limit to 1
+6754b55 sched: turn off the TTWU_QUEUE feature
+1377f11 Sanitize 'move_pages()' permission checks
+8d4b96d mm/mempolicy: fix use after free when calling get_mempolicy
+32798b5 audit: Fix use after free in audit_remove_watch_rule()
+b3e2384 Use %zu to print resid (size_t).
+9b091b4 ANDROID: hid: uhid: implement refcount for open and close
+ed7f76c BACKPORT: HID: input: generic hidinput_input_event handler
+ade92b8 UPSTREAM: procfs: fixes pthread cross-thread naming if !PR_DUMPABLE
+49c5c34 proc: add a reschedule point in proc_readfd_common()
+ac7f76f ANDROID: keychord: Fix for a memory leak in keychord.
+f044a41 ANDROID: keychord: Fix races in keychord_write.
+02461cb ANDROID: keychord: Fix a slab out-of-bounds read.
+2e342ef signal: protect SIGNAL_UNKILLABLE from unintentional clearing.
+feeff22 UPSTREAM: sysfs: add sysfs_create/remove_groups()
+0a9eb5d ARM: make sure RO local relocations are part of kernel RO section
+37cafe8 fs/buffer.c: increase the buffer-head per-CPU LRU size
+b274cd1 signal: Only reschedule timers on signals timers have sent
+c4b3193 BACKPORT: FROMLIST: pids: make task_tgid_nr_ns() safe
+13e2b76 panic: add cpu/pid to warn_slowpath_common in WARNING printk()s
+5b94910 af_unix: fix struct pid memory leak
+63150ed BACKPORT: audit: consistently record PIDs with task_tgid_nr()
+74a90b6 KEYS: Don't permit request_key() to construct a new keyring
+5c419ad KEYS: fix freeing uninitialized memory in key_update()
+933075e KEYS: Call ->free_preparse() even after ->preparse() returns an error
+998a125 selinux: fix double free in selinux_parse_opts_str()
+7e50fca ANDROID: sdcardfs: Add missing break
+ee2a7e9 ANDROID: Sdcardfs: Move gid derivation under flag
+ad72acc ANDROID: mnt: Fix freeing of mount data
+17d1eb2 kgsl: Increase priority of RT thread
+6ce9c59 msm: mdss: Update RT priority
+ed6ec4b sched: s/do_each_thread/for_each_process_thread/ in core.c
+770d319 rcu: Don't disable CPU hotplug during OOM notifiers
+462dfa0 mutex: Add a delay into the SPIN_ON_OWNER wait loop.
+75b448b [BACKPORT] Implement zen-tune v4.5
+63ae04f SELinux forced permissive/enforcing patch
+89bb60d Add: SIO scheduler
+9290def adreno_idler: Declare display_on correctly
+5dbf9bd adreno_idler: Add display state awareness
+60ef23e state_notifier: Check delayed work status before cancel
+0a8d58d state_notifier: Make workqueues unbound
+ae3c798 state_notifier: Reduce defer on suspend call to 1 second
+30eca3c state_notifier: Queue work on any core
+c668589 state_notifier: enable by default
+3234972 Add state notifier driver
+a88097f cfq-iosched.c: fix In function 'cfq_get_queue':
+f8ba113 wake gestures:set proper tuneables for wt88047
+ca56640 wake gestures: cleanup and support for wt88047
+6604d5a wake_gestures: add sweep2wake, doubletap2wake and sweep2sleep for Redmi 2
+6ae1c67 arm: psci: drop info prints seen during cpu hotplug to pr_debug
+ae7e2d2 mdss: move to a kthread for vsync_retire_work_handler
+0de98ae block: Fix format string mismatch in cfq-iosched.c
+1c560ea block: bfq: set IOPS mode by default with slice_idle set to 0
+d11f6aa cfq-iosched: minor cleanups
+41231d4 cfq-iosched: fix oom cfq_queue ref leak in cfq_set_request()
+703012a cfq-iosched: fix async oom queue handling
+3b37f7a cfq-iosched: simplify control flow in cfq_get_queue()
+3437046 cfq-iosched: fix the setting of IOPS mode on SSDs
+ef7d467 block: Make CFQ default to IOPS mode on SSDs
+43c736d PM: devfreq: Always reflect a change of polling interval
+35365c3 Use IRQ tree instead of linear to fix slowpath warning.
+07eb2f3 PM / devfreq: fix scaling down logic for simple clock scaling
+edf52c0 mmc: core: Fix mmc clk scale down during writes.
+9113991 BACKPORT: ext4/fscrypto: avoid RCU lookup in d_revalidate
+b097725 fs: exfat: merge upstream changes from https://github.com/dorimanx/exfat-nofuse
+7dd9042 msm: null pointer dereferencing
+4c2f1cb tty: fix memleak in alloc_pid
+61b57f8 kthread_work: wake up worker only when the worker is idle
+1f4fc33 mm/slub: optimizations
+43524b3 Optimized ARM RWSEM algorithm
+4f75cdc impulse: Use display_state.h to drop necessity of state notifier
+39d787e cpufreq: add bioshock governor
+a08149b cpufreq: Add latest impulse governor
+26e8d64 cpufreq: Add lionfish governor v1.1
+7070076 drivers: clk: add custom voltage control @AshishM94 : ported to msm8916
+756154d arm: crypto: boost perfomance
+60129e0 msm: mdss: remove more logging spam
+898cd35 BackPort OnDemand Governor from Linux v3.18
+c65f494 ARM: topology: Suppress clock-frequency error
+3bace4e Squash 'enhance power efficiency' patches
+aa5756b scripts: Optimize Sfck Compression
+262c22b msm: mdss: Avoid calling wake_up_all() twice in display thread
+47b69aa ARM: alignment: correctly decode instructions in BE8 mode.
+82b30ef ARM: optimize memset_io()/memcpy_fromio()/memcpy_toio()
+d10af14 mm/slub: don't wait for high-order page allocation
+a636e86 mm, vmalloc: remove useless variable in vmap_block
+72af024 mm, vmalloc: use well-defined find_last_bit() func
+a9e76a3 cpufreq: qcom-cpufreq: Check return of cpufreq_frequency_get_table
+d7d78b2 vfs: Fix pathological performance case for __alloc_fd()
+31e57d7 mm: get rid of 'vmalloc_info' from /proc/meminfo
+77a6e9d lib/memcopy: use glibc version
+7173fc57 lib/string: use glibc version
+cb6d53b include/linux/usb/msm_hsusb.h: update to 2000
+1d849cc PM: devfreq: Fix simple_ondemand crashing on startup
+982d8b8 BACKPORT: selinux: restrict kernel module loading
+9ac2c0e selinux: remove unused variabled in the netport, netnode, and netif caches
+b73274a selinux: conditionally reschedule in hashtab_insert while loading selinux policy
+5d93c7a selinux: conditionally reschedule in mls_convert_context while loading selinux policy
+5261c8c selinux: no recursive read_lock of policy_rwlock in security_genfs_sid()
+cd2d7a7 selinux: fix a possible memory leak in cond_read_node()
+957e746 selinux: make the netif cache namespace aware
+8fd237b selinux: normalize audit log formatting
+ffc0efe selinux: cleanup error reporting in selinux_nlmsg_perm()
+675d99a selinux: Remove unused function avc_sidcmp()
+d25ed95 selinux: quiet the filesystem labeling behavior message
+60dadeb SELinux: do all flags twiddling in one place
+0d4bcc6 selinux: add force_audit sysfs node to enable logging of dontaudit
+9f8d6c2 IKSWL-3373: selinux: Improve avc logging
+b41e5ca CHROMIUM: selinux: Do not log "permissive" denials
+e8dbe2b sched/fair: Fix tg_set_cfs_bandwidth() deadlock on rq->lock
+8bb19b7 sched: Avoid throttle_cfs_rq() racing with period_timer stopping
+faa57a9 sched: Fix race in idle_balance()
+4b8526f sched: Force sleep on consecutive sched_yields
+7b9cea7 sched: Update rq clock before calling check_preempt_curr()
+4d985a6 sched: Teach scheduler to understand TASK_ON_RQ_MIGRATING state
+138c398 sched/balancing: Reduce the rate of needless idle load balancing
+d5a7a1c sched/fair: Stop searching for tasks in newidle balance if there are runnable tasks
+fe9d905 sched/balancing: Prevent the reselection of a previous env.dst_cpu if some tasks are pinned
+098d208 sched/fair: Implement fast idling of CPUs when the system is partially loaded
+9c18d80 sched/fair: Optimize find_busiest_queue()
+f8d531c sched: Remove one division operation in find_busiest_queue()
+ba44f19 CHROMIUM: cpufreq: interactive: calculate load before freq change
+d3f8ea8 IKQCOMSD1-2616 msm: thermal: Quiet the threshold logs
+2c7adc4 Apply CFLAGS, -Os to decompress.o to improve decompress performance during boot-up process
+a577bc9 writeback: increase bdi_min_ratio to 5 in light of the latest writeback commit.
+076c35f cpufreq: fallback to interactive if governor is not found
+d9f2d2e Reduced RQ Lock-Contention for upto 0.7% increase in Performance
+5b0ef32 Optimized Task-Search for upto 6% increase in Performance
+c800fde Optimized Integer SQRT. for upto 3x faster operation
+ba5fc0e Optimized task_sched_runtime for upto 20% increase in Performance
+9d22c2b Optimized Console FrameBuffer for upto 70% increase in Performance
+d163032 Squashed hrtimer optimization commits.
+7d74d0b msm: memutils: memcpy, memmove, copy_page optimization
+365dc33 cpufreq: set policy with user_policy data
+bd525a41 char: compile frandom
+5d1080d Add /dev/frandom support
+1abc0ea selinux: just shut up
+de0003f Improve Buffer Performancce
+4b0041d block: deadline: Optimize for non-rotational
+3704b2e arm: dts: msm8916: fair vibrations
+09c6a31 power: battery_current_limit: Remove hotplug control
+b1427e9 ARM: dts: msm: Set the default governor for cpubw to performance
+fc77963 cpuidle: don't disable cpuidle when entering suspend
+2b5adb6 fs: add exfat support https://github.com/dorimanx/exfat-nofuse
+0d3bcee msm: Use interruptible wait to not affect load average
+2074172 sched/loadavg: Fix loadavg artifacts on fully idle and on fully loaded systems
+4a368c9 msm_performance: Make input boosting optional
+77738e6 Optimize kernel cfbfillrect function
+0b22804 ARM: 8171/1: Use current_stack_pointer for return_address
+7337776 ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h
+1705347 Optimizations and Fixes to Thermal
+416af68 Optimizations and Fixes to GPU
+df8232c lowmemorykiller: trace kill events.
+bbe6aa6 int_sqrt: Improve 3x faster integer sqrt.
+ae645fc int_sqrt: correction square root algo with naming
+05ad5c7 msm: thermal: Add sysfs nodes to control parameters
+8203e56 zcache: add missing file
+e50ce21 Add USB Keyboard Mouse Support
+d982646 qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye
+b5c9d1c msm: vidc: disable debug logs
+ce045af msm: vidc: disable CPU L2 cache PC during video sessions
+6889963 msm: Fix high load average from uninterruptible waits
+03f6f6b block: sioplus: set fifo batch to 16 to reduce overload on eMMC and CPU.
+7d84263 block: sioplus Linux 3.10 compatibility update
+e99b60c block: scheduler: add SIOPLUS
+4486b05 FIOPS: forward port for use on 3.10 Linux
+5f883d4 block: fiops add some trace information
+baa0faf block: fiops bias sync workload
+a066390 block: fiops preserve vios key for deep queue depth workload
+e35e06d block: fiops add ioprio support
+f82e9b5 block: fiops sync/async scale
+f02b2b3 block: fiops read/write request scale
+a3f0e24 block: fiops ioscheduler core
+89a5c7e block: update zen scheduler to v1.1
+f3044ee block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.
+1573e4b block: zen crashing on selection fixup
+53e0dfd block: add zen scheduler
+f74f215 cpufreq: Introduce new relation for freq selection
+7d71e2b lowmemorykiller: account for unevictable pages
+59050d1 block: row: add magic values
+39f71b3 adreno idler: Ramp down more agressively
+731ae13 adreno_idler: fix typos :)
+a301063 adreno_idler: fix-up some comments
+801ca0c adreno_idler: fix-up type definitions
+61c97c2 adreno_idler: remove frequency bump
+141fcf0 adreno_idler: switch to count based instead of time based
+6bfb4fd Introduce Adreno idler for devfreq-based Adreno devices
+4d054ec proc: much faster /proc/vmstat
+ef38832 block: Disable add_random add_random was implemented for spinning hard disks.  It only slows SSDs down.  Read here http://wiki.samat.org/SSD for more info.
+98559e6 mmc: toggleable software crc mmc: disable software crc
+f6c9626 PM: devfreq: Fix show available freqs
+13be107 msm8916: Mild undervolt
+0b9f89d msm8916: dts: set boot_cpus to max possible
+813819c writeback: Fix occasional slow sync(1)
+7acd1b1 readahead: make context readahead more conservative
+26dd234 writeback: fix writeback cache thrashing
+27f1879 writeback: fix race that cause writeback hung
+f3d759f lib/crc7: Shift crc7() output left 1 bit
+e27220c ext4: rate limit printk in buffer_io_error()
+32a66ab ARM: fix debug prints relevant to PCI devices
+b241da8 arm: idle: add missing need_resched check
+60d8e33 ARM: make kernel oops easier to read
+86bcb89 power: quickwakeup: initial driver
+968a9de cpu_pm: Add level to the cluster pm notification
+e9be490 PM / suspend: Always use deepest C-state in the "freeze" sleep state
+08b9333 PM / sleep: fix freeze_ops NULL pointer dereferences
+e08a769 ACPI / PM: Hold ACPI scan lock over the "freeze" sleep state
+b9414ad PM / Sleep: Remove ftrace_stop/start() from suspend and hibernate
+225eb33 PM / suspend: Make cpuidle work in the "freeze" state
+b4a6e6e PM / suspend: Remove unnecessary !!
+8562db4 PM / Sleep: increase ftrace coverage in suspend/resume
+4a7e04d PM / wakeup: Adjust messaging for wake events during suspend
+451c1de cpuidle: Indicate when a device has been unregistered
+f2b468f sched/idle: Move cpu/idle.c to sched/idle.c
+e4a858e lpm-levels: Do not consider cluster residency in suspend
+89c5b51 drivers: cpuidle: lpm-levels: Fix wakeup time for suspend
+405a3cf msm: lpm-levels: add suspend_again handler
+4a3e29f lpm-levels: Fix low power mode selection
+596a8c1 lpm_levels: Avoid race by preventing hotplug during lpm probe
+510132d drivers: cpuidle: lpm-levels: fix array-bounds warnings
+120ff77 cpuidle: Make cpuidle's sysfs directory dynamically allocated
+bf1c3cd cpuidle: Fix white space to follow CodingStyle
+4999f9f cpuidle: Do not use CPUIDLE_DRIVER_STATE_START in cpuidle.c
+0adc25f cpuidle: Fix the kerneldoc comment for cpuidle_enter_state()
+d72159c cpuidle: Check the sign of index in cpuidle_reflect()
+39e0d5d cpuidle: remove state_count field from struct cpuidle_device
+c0b85fd cpuidle: don't compile ladder governor
+1a154f2 drivers/cpuidle: Replace __get_cpu_var uses for address calculation
+33d2757 cpuidle: menu: Call nr_iowait_cpu less times
+cc22ca3 cpuidle: menu: Use ktime_to_us instead of reinventing the wheel
+1503b72 cpuidle: menu: Use shifts when calculating averages where possible
+fb52981 cpuidle: Remove time measurement in poll state
+3810bad cpuidle: Remove manual selection of the multiple driver support
+28c4634 cpuidle: ladder governor - use macro instead of hardcoded value
+46765f1 cpuidle: menu governor - remove unused macro STDDEV_THRESH
+3a16131 cpuidle: fix permission for driver name sysfs node
+3b4ee6c cpuidle: fix comment
+5b7c0af cpuidle: Set polling in poll_idle
+e2ea648 cpuidle / menu: move repeated correction factor check to init
+e021638 cpuidle: sysfs: Export target residency information
+525ed06 cpuidle: delay enabling interrupts until all coupled CPUs leave idle
+089531b idle/cpuidle: Split cpuidle_idle_call main function into smaller functions
+17ac549 cpuidle: poll state can measure residency
+59d6377 cpuidle: Move perf multiplier calculation out of the selection loop
+6bbebed cpuidle: Do not substract exit latency from assumed sleep length
+676c378 cpuidle: Ensure menu coefficients stay within domain
+15c1621 cpuidle: Use actual state latency in menu governor
+fcec811 cpuidle: rename expected_us to next_timer_us in menu governor
+d215419 cpuidle: Check for dev before deregistering it.
+1f35374 cpuidle: Make it clear that governors cannot be modules
+e5e8d91 cpuidle: remove cpuidle_unregister_governor()
+dc5ff64 cpuidle: don't call poll_idle_init() for every cpu
+a639884 cpuidle: use drv instead of cpuidle_driver in show_current_driver()
+5fe51a4 cpuidle: call cpuidle_get_driver() from after taking cpuidle_driver_lock
+aba2351 cpuidle: replace multiline statements with single line in cpuidle_idle_call()
+11fef9a cpuidle: reduce code duplication inside cpuidle_idle_call()
+ffe4336 cpuidle: merge two if() statements for checking error cases
+6d9aaf2 cpuidle: rearrange __cpuidle_register_device() to keep minimal exit points
+77955c5 cpuidle: rearrange code in __cpuidle_driver_init()
+c7d75d8 cpuidle: make __cpuidle_driver_init() return void
+ddfed9f cpuidle: make __cpuidle_device_init() return void
+b5c62ad cpuidle: Check if device is already registered
+79e36b2 cpuidle: Introduce __cpuidle_device_init()
+70f1ff7 cpuidle: Introduce __cpuidle_unregister_device()
+37181d5 cpuidle: Check cpuidle_enable_device() return value
+aafda3a cpuidle: Fix comments in cpuidle core
+23efb08 cpuidle: Fix ARCH_NEEDS_CPU_IDLE_COUPLED dependency warning
+1e52e8a cpuidle: Comment the driver's framework code
+0efb17c cpuidle: improve governor Kconfig options
+eb8db7e cpuidle: coupled: disable interrupts after entering safe state
+d6cd1f4 cpuidle: Change struct menu_device field types
+87fe61a cpuidle: Add a comment warning about possible overflow
+1fce76f cpuidle: Fix variable domains in get_typical_interval()
+2a198b9 cpuidle: Fix menu_device->intervals type
+d8a1e73 cpuidle: CodingStyle: Break up multiple assignments on single line
+aa3fc82 cpuidle: Check called function parameter in get_typical_interval()
+450092c1d cpuidle: Rearrange code and comments in get_typical_interval()
+be7a675 cpuidle: Ignore interval prediction result when timer is shorter
+c47ca17 cpuidle: fix improper return value on error
+e66d2f9 drivers: cpuidle: Remove counting of last_residency
+5a705df lpm-levels: Fix driver registration after API change
+e40b7e0 cpuidle: lpm_levels: Remove duplicate cpuidle tracepoints
+8e51ea6 lpm-levels: Check for need_resched just before entering PSCI
+370902d cpuidle: lpm-levels: Remove local_irq_enable from lpm_cpuidle_select
+cacb716 lpm-levels: Add QCOM cpuidle governor
+8cbf559 lpm-levels: Use residency instead of power and energy overhead values
+ef23d52 msm: lpm-levels: Log CPU lpm enter exit events
+32e3362 power: qcom: Select CPU_IDLE_MULTIPLE_DRIVERS
+69ca4a8 cpuidle: simplify multiple driver support
+d0ed65f cpuidle: declare cpuidle_dev in cpuidle.h
+84d70b1 drivers: lpm-levels: Don't allow idle low power modes during resume
+54ff180 cpuidle: lpm-levels: Rename cpumask variable name
+a6d65a1 lpm-levels: Add L3 flag to the smc call
+a9ef39a lpm-levels: Support l3 and cbf modes
+41b84b8 msm: lpm-levels: Modify ftrace events to track latency/sleep time
+8c1f504 drivers: lpm-levels: Update cpu mask to get cluster sleep time
+a4fff5a drivers: lpm_levels: remove the BUG_ON in get_cluster_sleep_time
+7faccc7 drivers: lpm-levels: Provide API to set wake up time from suspend
+d147743 msm: lpm-levels: Add ftrace events to track latency/sleep time
+8b005ef cpuidle: lpm-levels: Disable dynamic routing of interrupts
+ee70b3f cpuidle: Add need_resched() check
+095c816 ARM: introduce common set_auxcr/get_auxcr functions
+d413856 msm: lpm-levels-of: Fix lockdep warnings
+2d7bfdb ANDROID: trace: net: use %pK for kernel pointers
+79a2759 sdcardfs: disable some log spam
+a439e73 cpufreq: stats: Fix memory leaks when updating stats table
+40aa8bc power: msm-core: Fix mutex not getting unlocked in error path
+9e9d2bd net: ipc_router: Fix memory leaks when releasing a remote port
+3b2fcaa soc: qcom: watchdog_v2: Fix memory leaks when memory_dump_v2 isn't built
+935b518 power:process: decrease time to enter sleep
+8c5ecd0 block: fix wrong error return in elevator_init()
+aaf0cb5 ARM: topology: Add efficiency coefficient for Krait
+2b55e5c irq: ratelimit is useless
+ff5d9a3 lib: add module support to crc32 tests
+f22ec1c crc32: use ktime_get_ns() for measurement
+fb02b92 lib: crc32: Add some additional __pure annotations
+7eea186 lib: crc32: Mark test data __initconst
+e29a0a7 lib: crc32: Greatly shrink CRC combining code
+f995347 lib/crc32.c: remove unnecessary __constant
+288d093 lib: crc32: reduce number of cases for crc32{, c}_combine
+aabd509 lib: crc32: conditionally resched when running testcases
+b16c28b lib: crc32: add test cases for crc32{, c}_combine routines
+2295d4e lib: crc32: add functionality to combine two crc32{, c}s in GF(2)
+8bb7aacf lib: crc32: clean up spacing in test cases
+588f3cd lib/crc32: update the comments of crc32_{be,le}_generic()
+e02db0f lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
+5505f06 msm: kgsl: Report correct GPU frequency in sysfs
+c0650d7 block: disable entropy contributions for nonrot devices
+d563fb6 ARM: VFP: use optimal flags for Krait
+f065823 locking/rtmutex: Use READ_ONCE() in rt_mutex_owner()
+1dea01d compiler.h: avoid sparse errors in __compiletime_error_fallback()
+2d39bce compiler: Allow 1- and 2-byte smp_load_acquire() and smp_store_release()
+1f7ca3d locking: Remove atomicy checks from {READ,WRITE}_ONCE
+ca5730a kernel: make READ_ONCE() valid on const arguments
+dd0bac1 kernel: Change ASSIGN_ONCE(val, x) to WRITE_ONCE(x, val)
+867c85c kernel: Provide READ_ONCE and ASSIGN_ONCE
+0af951b compiler.h: add support for malloc attribute
+6e4fc1c zsmalloc: fix zs_can_compact() integer overflow
+d7ddf34 mm/zsmalloc: add `freeable' column to pool stat
+24d819e zsmalloc: drop unused member 'mapping_area->huge'
+85ce4c1 zsmalloc: fix migrate_zspage-zs_free race condition
+c650bf4 zsmalloc: reorganize struct size_class to pack 4 bytes hole
+5620885 zsmalloc: use page->private instead of page->first_page
+09d8a39 zsmalloc: reduce size_class memory usage
+fdfb430 mm/zsmalloc.c: remove useless line in obj_free()
+2b2a22a zsmalloc: use preempt.h for in_interrupt()
+258ea77 zsmalloc: fix obj_to_head use page_private(page) as value but not pointer
+994f586 zsmalloc: add comments for ->inuse to zspage
+19207c0 zsmalloc: remove null check from destroy_handle_cache()
+0b225ca zsmalloc: use class->pages_per_zspage
+79a1660 zsmalloc: consider ZS_ALMOST_FULL as migrate source
+52a5d35 zram: update documentation
+745ff05 zsmalloc: account the number of compacted pages
+f72646c zram: add `compact` sysfs entry to documentation
+f6001d8 zsmalloc/zram: introduce zs_pool_stats api
+51b0f29 zsmalloc: cosmetic compaction code adjustments
+9fb4745 zsmalloc: introduce zs_can_compact() function
+507fca8 zsmalloc: always keep per-class stats
+f84eaef zsmalloc: drop unused variable `nr_to_migrate'
+6209896 zsmalloc: remove obsolete ZSMALLOC_DEBUG
+587c294 zsmalloc: partial page ordering within a fullness_list
+1d9d4ca zram: Register with show_mem notification framework
+4841486 zram: restrict add/remove attributes to root only
+2a814a0 zram: fix unbalanced idr management at hot removal
+570aad2 zram: don't call idr_remove() from zram_remove()
+42f7add zram/zcomp: do not zero out zcomp private pages
+e0776e6 zram: pass gfp from zcomp frontend to backend
+66e1c2e zram: try vmalloc() after kmalloc()
+549da9f zram/zcomp: use GFP_NOIO to allocate streams
+11c3b84 zram: make is_partial_io/valid_io_request/page_zero_filled return boolean
+5e160017 zram: keep the exact overcommited value in mem_used_max
+e71358e zram: introduce comp algorithm fallback functionality
+273d9db zram: unify error reporting
+b7225b4 zram: fix pool name truncation
+8a88728 zram: check comp algorithm availability earlier
+35465f8 zram: cut trailing newline in algorithm name
+056b091 zram: cosmetic zram_bvec_write() cleanup
+7c68972 zram: add dynamic device add/remove functionality
+53093ab zram: close race by open overriding
+f130b16 zram: return zram device_id from zram_add()
+51f050f zram: trivial: correct flag operations comment
+21167ee zram: report every added and removed device
+a4e93d8 zram: remove max_num_devices limitation
+90f095b zram: reorganize code layout
+565caa5 zram: use idr instead of `zram_devices' array
+78cfcd1 zram: cosmetic ZRAM_ATTR_RO code formatting tweak
+68f7553 zram: Add back QUEUE_FAST_FLAG
+4a75866 zram: Disable allocation failure logging
+5a0aca5 zram: remove obsolete ZRAM_DEBUG option
+73ea2d32 staging: zram: Rate limit memory allocation errors
+43bc199 zram: Default lz4 if available
+b1d0751 zram: do not use copy_page with non-page aligned address
+6f3d216 zram: fix possible use after free in zcomp_create()
+4249616 swap: fix set_blocksize race during swapon/swapoff
+e23634f swap: cond_resched in swap_cgroup_prepare()
+686077f initramfs: avoid "label at end of compound statement" error
+8a04e05 initramfs: Always do fput() and load modules after rootfs populate
+2a233bd initramfs: finish fput() before accessing any binary from initramfs
+2645679 init/initramfs.c: resolve shadow warnings
+9708848 initramfs: add write error checks
+5ecc126 initramfs: support initramfs that is bigger than 2GiB
+c4304d2 initramfs: support initrd that is bigger than 2GiB
+bcb9fbe init: fix possible format string bug
+1e4f990 lib/decompress_inflate.c: include appropriate header file
+e03e6e1 initrd: fix lz4 decompress with initrd
+d3764b7 lib/decompress_unlz4.c: always set an error return code on failures
+468cda8 arm: add support for LZ4-compressed kernel
+a7e3656 lz4: fix wrong compress buffer size for 64-bits
+8566a02 lib: lz4: cleanup unaligned access efficiency detection
+fd8d898 lib: lz4: fixed zram with lz4 on big endian machines
+344be91 lz4: fix system halt at boot kernel on x86_64
+b32437b lib/lz4: Pull out constant tables
+328a652 LZ4 : fix the data abort issue
+3c0d726 lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+86a3105 lz4: fix another possible overrun
+4f43510 lz4: ensure length does not wrap
+8745385 lz4: fix compression/decompression signedness mismatch
+35c3276 lib/lz4: correct the LZ4 license
+6738afd lib: add lz4 compressor module
+1f98e81 lib: add support for LZ4-compressed kernel
+882002a decompressor: add LZ4 decompressor module
+ad5ae24 f2fs: Import latest one from motorola-kernel
+bffc3c9 f2fs: Remove f2fs
+6232fc9 arm/dt: msm8916: Schedule mmcqd on idle CPU
+083fb30 arm/dt: msm8916: Enable bam_dmux fast shutdown
+5b12495 msm8916: gpu: Add UC/OC frequencies
+694d811 ARM: dts: msm8916: Unlock available frequencies
+720e25e Merge "ASoC: compress: Fix compress capture stream handling"
+f88d79d sched: set HMP scheduler's default initial task load to 100%
+ee8117d ktime: add ms_to_ktime() and ktime_add_ms() helpers
+928b163 cpufreq: interactive: replace strict_strtoul() with kstrtoul()
+5a14dbd sched: Add sysctl to enable power aware scheduling
+4bc4a2a sched: Ensure no active EA migration occurs when EA is disabled
+14fe948 sched: Document HMP scheduler
+b8b239f cpufreq: interactive: Delay evaluation of notification by 1ms
+ba3ca04 cpufreq: interactive: Add documentation for new sysfs nodes
+1d7e3a0 cpufreq: interactive: Handle notification even if timer fires first
+4bc3e5d cpufreq: interactive: Fix potential divide-by-zero operation
+b48fdac cpufreq: interactive: Ramp up to policy->max for heavy new task
+afa4fb2 sched: account new task load so that governor can apply different policy
+b7a550b cpufreq: interactive: Pass target_load to scheduler
+d801d8a sched: take into account of governor's frequency max load
+67fe701 sched: Provide a wake up API without sending freq notifications
+40bd775 sched: duplicate scheduler files to bring back QHMP extensions
+d01624b cpufreq: interactive: Do not align sample windows by default
+2486825 cpufreq: interactive: Compute target freq independent of policy min/max
+19145f4 cpufreq: interactive: Allow frequency drop during max_freq_hysteresis
+a4df7d6 cpufreq: interactive: Fix load in cpufreq_interactive_cpuload event
+4a029e5 cpufreq: interactive: Ignore hispeed_freq logic for notification
+87a3d1c cpufreq: interactive: Use target_freq for load calculation
+878fb4a cpufreq: interactive: Make skipping delay for migration optional
+6ae90bb sched: Add stub function for sched_get_cpus_busy()
+c9d10b7 sched: prevent task migration while governor queries CPUs' load
+e838000 cpufreq: interactive: Use sched_get_cpus_busy() to query busy time
+15bdc26 cpufreq: interactive: Correctly reschedule timer for slack_only case
+8dbc2d0 cpufreq: interactive: Add cpuload trace events
+df13cf1 cpufreq: interactive: Replace per-cpu timer with per-policy timer
+0de5c6e cpufreq: interactive: Remove first_cpu field
+fb728b8 cpufreq: interactive: Do not reschedule timer if policy->max changes
+9a460bf cpufreq: interactive: Skip delay in frequency changes due to migration
+7af7a13 cpufreq: interactive: Reschedule timer if min_freq is reduced
+214135d cpufreq: interactive: Ramp up directly if cpu_load exceeds 100
+fa308fb cpufreq: interactive: Implement cluster-based min_sample_time
+f5f93ee cpufreq: interactive: Rearm governor timer at max freq
+e44eefd cpufreq: interactive: Fix compiler warning for hvt
+63d61ef cpufreq: interactive: only boost tunable affected cpus
+5880549 cpufreq: interactive: don't skip waking up speedchange_task if target_freq > policy->cur
+e4272c3 Fast Charge is added, and enabled by default
+7761565 [SQUASHED] Add Kcal color management support
+a1e6415 drivers:video:mdss: Squash revert the LiveDisplay driver
+87d15ce arch:arm:asm: Fix compiler warnings
+3c13873 drivers: clk: qcom: silence another kernel warning
+5bd6b32 drivers: i2c: silence log spam
+22b55a4 drivers: power: qcom: msm-pm: silencio!
+ed25c52 drivers: video: mdss: silence some log spam
+9923516 drivers: pci: msm: quiet some log spam
+c7ca598 drivers: clk: qcom: silence kernel warning
+b8c5b8a6 drivers: qcom: peripheral-loader: quiet
+c6fd006 arch: arm/arm64: silence some log spam
+21dfa19 kernel: cpu: disable some log spam
+6e65e62 ks_bridge: mpm-of: disabled debug spam
+96668b9 audit: silence spammy debug logs
+8622d00 busses: i2c-msm-v2: silence spammy debug logs
+2b65b85 Initial dmesg pruning
+7bc38d2 PCI: remove ARCH_SUPPORTS_MSI kconfig option
+fa76a99 Makefile: Kill use of GCC wrapper
+f2a7ae2 display: add a simple api to query the display state (on/off) at any point in time Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>
+e099f70 shut up unwind
+f24b3f3 scripts: remove unused function in sortextable.c
+82d5d47 Update
+f4d9700 defconfig: wt88047 regenerate
+443f6b6 Make EXCALIBUR
+d0321a7 Bring Stuff
+62af46f Merge "ASoC: compress: Fix compress device direction check"
+6d3cd02 wlan: Add sanity check to limit mgmt frames data len
+63e3b95 Merge "ASoC: msm: qdsp6v2: Add App type cfg support for Listen."
+720b079 wlan: Check ie_len against 255 in function get_container_ies_len
+e1e0610 Merge "msm: ipa: add null terminator"
+7590caa msm: ipa: add null terminator
+5ec0222 BACKPORT: ext4: fix data exposure after a crash
+6a2b675 wlan: Propagate key sequence counter to SME
+ec57be0 Prevent potential double frees in sg driver
+c7d8ab9 Merge "mm/mempolicy.c: fix error handling in set_mempolicy and mbind."
+f4c0027 Merge "ext4: provide ext4_issue_zeroout()"
+152830c Merge "ip6_gre: fix ip6gre_err() invalid reads"
+44c71c0 mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+629a432 ext4: provide ext4_issue_zeroout()
+699d488 ip6_gre: fix ip6gre_err() invalid reads
+26a6203 ipx: call ipxitf_put() in ioctl error path
+92b9a36 Merge "wlan: Update key sequence counter to TL"
+4dfb6df wlan: Fix Out-of-bound access in sapInterferenceRssiCount
+c0f0c2a Merge "msm: camera: Return -NOTTY on invalid ioctl command."
+877ef70 Merge "Revert "ARM: dts: msm:  Reset USB phy on every disconnect""
+47e19de net: usb: rmnet_usb_ctrl: Fix use after free issue
+f168433 ASoC: msm: qdsp6v2: Add App type cfg support for Listen.
+58991b3 wlan: Add support to enable/disable RTT feature via gEnableRTTsupport
+f58681e Revert "ARM: dts: msm:  Reset USB phy on every disconnect"
+a509b91 ASoc: msm: qdsp6v2: Add support for compress capture
+9d8303a ASoC: compress: Fix compress device direction check
+75736c7 ASoC: compress: Fix compress capture stream handling
+e42890c wlan: Update key sequence counter to TL
+3196267 msm: camera: Return -NOTTY on invalid ioctl command.
