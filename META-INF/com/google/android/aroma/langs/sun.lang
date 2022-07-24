@@ -77,6 +77,9 @@ perfhal=Perf HAL
 perfhal.restore=Malikkeun Perf HAL Lami
 perfhal.restoreinfo=Pikeun Malikkeun. Upami sateuacan dipasang salaku modul, anjeun ngan saukur tiasa ngaleupaskeun via Magisk Manager.
 
+dis.simple.thermal=Non-aktifkeun Simple Thermal sacara permanen
+disableperma=Non-aktifkeun sacara permanen
+
 add.on=Tambahan
 kernel.about=Ngeunaan Kernel
 kernel.aboutoc=Ngeunaan Kernel Overclock

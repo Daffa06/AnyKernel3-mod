@@ -78,6 +78,9 @@ perfhal=Perf HAL
 perfhal.restore=Restore Old Perf HAL
 perfhal.restoreinfo=To Restore Old Perf HAL.If previously it was installed as module , u just Remove it with Magisk Manager.
 
+dis.simple.thermal=Disable Simple Thermal permanently
+disableperma=Disable permanently
+
 add.on=Additional
 kernel.about=About Kernel
 kernel.aboutoc=About Overclocked Kernel

@@ -182,6 +182,13 @@ elif [ "`$BB grep -w "selected.3=2" /tmp/aroma-data/spectrum.prop`" ];then
 patch_cmdline androidboot.selinux androidboot.selinux=permissive
 fi
 
+# Simple Thermal State
+if [ "`$BB grep -w "selected.1=1" /tmp/aroma-data/refrate.prop`" ];then
+patch_cmdline simple_thermal_disabled simple_thermal_disabled=1
+elif [ "`$BB grep -w "selected.1=2" /tmp/aroma-data/refrate.prop`" ];then
+patch_cmdline simple_thermal_disabled simple_thermal_disabled=0
+fi;
+
 # end ramdisk changes
 
 write_boot;
