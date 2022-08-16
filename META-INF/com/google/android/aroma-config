@@ -39,7 +39,7 @@ splash(
     5000,
     "sw"
 );
-theme("materialize_blackindigo");
+theme("materialize_red");
 fontresload( "0", "ttf/Rosemary-Regular.ttf", "12" );
 fontresload( "1", "ttf/Rosemary-Regular.ttf", "14" );
 
@@ -81,7 +81,8 @@ viewbox(
       "  <~welcome.author>\t\t: <b>"+ini_get("rom_author")+"</b>\n\n"+
       "  <~welcome.builddate>\t\t: <b>"+ini_get("rom_date")+"</b>\n\n"+
 	  "  <~welcome.buildvariant>\t\t: <b>KVARIANT</b>\n\n\n"+
-	  "  <b><~welcome.warning></b>\n\n\n\n"+
+	  "  <b><~welcome.warning></b>\n\n"+
+	  "  <b><~independenceday>!</b>\n\n\n"+
 
     "<~welcome.next></#>",
   

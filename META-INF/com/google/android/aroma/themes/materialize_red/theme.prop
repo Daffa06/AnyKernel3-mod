@@ -24,34 +24,34 @@ img.radio.on.focus=res/radio_on
 img.radio.on.push=res/radio_on_ripple
 
 
-color.winbg           = #000000
-color.winbg_g         = #000000
-color.winfg           = #ffffff
+color.winbg           = #ffffff
+color.winbg_g         = #ffffff
+color.winfg           = #333333
 color.winfg_gray      = #666666
-color.dialogbg        = #000000
-color.dialogbg_g      = #000000
-color.dialogfg        = #ffffff
-color.textbg          = #000000
-color.textfg          = #ffffff
+color.dialogbg        = #ffffff
+color.dialogbg_g      = #ffffff
+color.dialogfg        = #333333
+color.textbg          = #ffffff
+color.textfg          = #333333
 color.textfg_gray     = #666666
 color.controlbg       = #dddddd
 color.controlbg_g     = #cccccc
-color.controlfg       = #ffffff
-color.selectbg        = #3f51b5
-color.selectbg_g      = #3f51b5
-color.selectfg        = #000000
-color.titlebg         = #3f51b5
-color.titlebg_g       = #3f51b5
-color.titlefg         = #000000
-color.dlgtitlebg      = #3f51b5
-color.dlgtitlebg_g    = #3f51b5
-color.dlgtitlefg      = #000000
-color.scrollbar       = #3f51b5
-color.navbg           = #000000
-color.navbg_g         = #000000
-color.border          = #000000
-color.border_g        = #000000
-color.progressglow    = #3f51b5
+color.controlfg       = #333333
+color.selectbg        = #c81c3c
+color.selectbg_g      = #c81c3c
+color.selectfg        = #ffffff
+color.titlebg         = #c81c3c
+color.titlebg_g       = #c81c3c
+color.titlefg         = #ffffff
+color.dlgtitlebg      = #c81c3c
+color.dlgtitlebg_g    = #c81c3c
+color.dlgtitlefg      = #ffffff
+color.scrollbar       = #c81c3c
+color.navbg           = #ffffff
+color.navbg_g         = #ffffff
+color.border          = #ffffff
+color.border_g        = #ffffff
+color.progressglow    = #c81c3c
 
 
 config.roundsize             = 1
@@ -64,6 +64,6 @@ font.small            = etc/font.small
 font.big              = etc/font.big
 
 
-info.themename        = Materialize Black Indigo
+info.themename        = Materialize Red
 info.description      = Materialize Theme for AROMA Installer
 info.author           = RyuujiX
